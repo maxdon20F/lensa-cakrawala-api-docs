@@ -50,8 +50,4 @@ Digunakan untuk mengambil data lengkap dari satu layanan drone berdasarkan ID sp
   "harga": 6000000,
   "durasi": "3 Hari Kerja"
 }
-  "id": 3,
-  "nama_layanan": "Drone Mapping Kebun Sawit",
-  "harga": 3500000,
-  "durasi": "2 Hari Kerja"
-}
+```
