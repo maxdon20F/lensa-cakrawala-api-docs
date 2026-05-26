@@ -51,3 +51,30 @@ Digunakan untuk mengambil data lengkap dari satu layanan drone berdasarkan ID sp
   "durasi": "3 Hari Kerja"
 }
 ```
+### C. Memperbarui Data Layanan Drone 
+Digunakan untuk memperbarui data layanan drone yang sudah ada.
+
+* **HTTP Method:** `PUT`
+* **URL:** `{{baseUrl}}/layanan/{id}`
+
+#### Path Parameter(JSON)
+| Parameter | Tipe Data | Wajib | Keterangan |
+| :--- | :--- | :--- | :--- |
+| id | Number | Ya | ID unik layanan yang akan diperbarui |
+
+#### Request Body (JSON)
+| Field | Tipe Data | Wajib | Keterangan |
+| :--- | :--- | :--- | :--- |
+| nama_layanan | String | Ya | Nama paket layanan drone |
+| harga | Number | Ya | Nilai tarif baru dalam satuan Rupiah yang akan menggantikan harga lama |
+| durasi | String | Tidak | Estimasi waktu pengerjaan |
+
+#### Contoh Respon (200 OK)
+```json
+{
+  "id": 1,
+  "nama_layanan": "Pemetaan Area Perkebunan Pro",
+  "harga": 5500000,
+  "durasi": "3 Hari Kerja"
+}
+```
