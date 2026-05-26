@@ -78,3 +78,23 @@ Digunakan untuk memperbarui data layanan drone yang sudah ada.
   "durasi": "3 Hari Kerja"
 }
 ```
+
+---
+
+### D. Menghapus Data Layanan Drone
+Digunakan untuk menghapus satu layanan drone dari sistem berdasarkan ID spesifik.
+
+* **HTTP Method:** `DELETE`
+* **URL:** `{{baseUrl}}/layanan/{id}`
+
+#### Path Parameters
+| Parameter | Tipe Data | Wajib | Keterangan |
+| :--- | :--- | :--- | :--- |
+| id | Number | Ya | ID unik dari layanan drone yang ingin dihapus |
+
+#### Contoh Respon (200 OK)
+```json
+{
+  "message": "Layanan berhasil dihapus"
+}
+```
